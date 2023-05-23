@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.slideShow {
+  display: grid;
+  place-items: center;
+  padding-bottom: 20px;
+  background-color: #1e1e1e;
+}
+
+.slideshow-container {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.mySlides {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  position: absolute;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 25px 25px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 25px 0 0 25px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fades {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+#main {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+#main>#about {
+  text-align: center;
+  padding: 30px;
+}
+
+#aboutMain>#content {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  max-height: 800px;
+}
+
+#aboutMain>#content>img {
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+#aboutMain>#content>#container {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  margin: 30px;
+  margin-top: 20%;
+}
+
+#aboutMain>#experience {
+  text-align: center;
+  padding: 30px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+#contactMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactMain > h5 {
+  text-align: center;
+}
+
+#footer {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+#footer>i>a {
+  font-size: 18px;
+}
+
+#footer>i>a>img {
+  width: 25px;
+  margin-left: 5px;
+}
+
+footer>i>a>img:hover {
+  animation-name: spin;
+  animation-duration: 200ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+footer>p {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+#contactFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: white;
+  margin-top: 30px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+input[type=text],
+input[type=email],
+#topic,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #007acc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin-top: 30px;
+  color: white;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.container > #contactForm {
+  grid-area: 1 / 2 / 3 / 3;
+}
+
+.container >  #contactEmail {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.container > #contactEmail > h3 {
+  text-align: center;
+}
+
+.container >  #socialMediaLinks {
+  grid-area: 2 / 1 / 3 / 1;
+  margin-left: 40px;
+  margin-right: 40px;
+}

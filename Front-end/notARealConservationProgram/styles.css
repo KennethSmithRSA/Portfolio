@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid black;
+}
+
+header > img {
+    width: 100px;
+}
+
+main > #FAQ {
+    display: flex;    
+    border: 1px solid black;
+    justify-content: space-evenly;
+}
+
+main > #FAQ > .question {
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+main > .content {
+ border: 1px solid black;
+ display: flex;
+}
+
+main > .content > .description {
+    border: 1px solid black;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+main > .content > .biomeLinks {
+    border: 1px solid black;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+main > .content > .biomeLinks > ul > li {
+    list-style: none;
+}
+
+main > .content > .biomeLinks > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+main > .content > .biomeLinks > ul > li > a:link {
+    color: black;
+}
+
+main > .content > .biomeLinks > ul > li a:visited {
+    color: rgb(31, 31, 136);
+}
+
+main > .content > .biomeLinks > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+main > .content > .biomeLinks > ul > li > a:active {
+    color: black;
+}
+
+main > .subBiomes,
+main > .characteristsics,
+main > .flora,
+main > .fauna,
+main > .geology {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    background-color: rgb(187, 184, 184);
+    padding: 20px;
+    text-align: center;
+}
